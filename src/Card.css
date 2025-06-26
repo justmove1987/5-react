@@ -1,0 +1,97 @@
+/* Card.css */
+.card-container {
+  max-width: 400px;
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 330px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+  margin-top: 0;
+}
+
+.card-content p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.card-footer {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: #333;
+  width: 10px;
+}
+
+.next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  font-size: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    margin: 20px;
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+
+  .card-content h2 {
+    font-size: 1rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .next-button {
+    width: 36px;
+    height: 36px;
+  }
+}
