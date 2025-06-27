@@ -24,16 +24,19 @@ cd onboarding-app
 
 ### 2.Install dependencies
 bash
+
 npm install
 
 
 ### 3. Run the development server
 bash
+
 npm run dev   # or npm start if using Create React App
 
 
 ### 4. Build for production
 bash
+
 npm run build
 
 
@@ -51,7 +54,11 @@ bash
 
 ## 🛠 Technologies
 React
+
 TypeScript
+
 Framer Motion
+
 Styled Components
+
 CSS (Media Queries for responsiveness)
