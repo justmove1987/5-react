@@ -23,25 +23,25 @@ cd onboarding-app
 ```
 
 ### 2.Install dependencies
-bash
+```bash
 
 npm install
-
+```
 
 ### 3. Run the development server
-bash
+```bash
 
 npm run dev   # or npm start if using Create React App
-
+```
 
 ### 4. Build for production
-bash
+```bash
 
 npm run build
-
+```
 
 ## 🧩 Project Structure
-bash
+```bash
 /src
 ├── assets/               # Images for each step
 ├── App.tsx               # Main logic and state
@@ -50,7 +50,7 @@ bash
 ├── Indicator.tsx         # Step indicator using styled-components
 ├── main.tsx              # Entry point
 └── index.css             # Global styles
-
+```
 
 ## 🛠 Technologies
 React
