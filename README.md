@@ -24,29 +24,21 @@ cd onboarding-app
 
 ### 2.Install dependencies
 bash
-Copia
-Modifica
 npm install
 
 
 ### 3. Run the development server
 bash
-Copia
-Modifica
 npm run dev   # or npm start if using Create React App
 
 
 ### 4. Build for production
 bash
-Copia
-Modifica
 npm run build
 
 
 ## 🧩 Project Structure
 bash
-Copia
-Modifica
 /src
 ├── assets/               # Images for each step
 ├── App.tsx               # Main logic and state
@@ -59,11 +51,7 @@ Modifica
 
 ## 🛠 Technologies
 React
-
 TypeScript
-
 Framer Motion
-
 Styled Components
-
 CSS (Media Queries for responsiveness)
