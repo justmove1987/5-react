@@ -39,6 +39,12 @@ const App: React.FC = () => {
     }
   };
 
+  const prevStep = () => {
+  if (step > 0) {
+    setStep(step - 1);
+  }
+};
+
   const currentCardData = tutorialData[step];
 
   return (
@@ -47,7 +53,10 @@ const App: React.FC = () => {
       description={currentCardData.description}
       image={currentCardData.image}
       bgColor={currentCardData.bgColor}
+      step={step}
+      totalSteps={tutorialData.length}
       onNext={nextStep}
+      onPrev={prevStep}
     />
   );
 };
