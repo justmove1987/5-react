@@ -48,7 +48,7 @@ const App: React.FC = () => {
   const currentCardData = tutorialData[step];
 
   return (
-    <Card
+     <Card
       title={currentCardData.title}
       description={currentCardData.description}
       image={currentCardData.image}
