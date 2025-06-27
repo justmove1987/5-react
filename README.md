@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# 🧭 Onboarding Tutorial App (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple multi-step onboarding experience built using **React** and **TypeScript**. It displays a series of cards with an image, title, and description, and allows users to navigate forward and backward through each step. The app includes animations, responsive design, and dynamic indicators.
 
-Currently, two official plugins are available:
+## 📦 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + TypeScript based SPA
+- Multi-step navigation (`Next` / `Previous` buttons)
+- Animated transitions using **Framer Motion**
+- Dynamic step indicator with active highlighting
+- Responsive layout (mobile-first)
+- Styled using plain CSS (`Card.css`)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 1. Clone the project
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/justmove1987/5-react.git
+cd onboarding-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2.Install dependencies
+bash
+Copia
+Modifica
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 3. Run the development server
+bash
+Copia
+Modifica
+npm run dev   # or npm start if using Create React App
+
+
+### 4. Build for production
+bash
+Copia
+Modifica
+npm run build
+
+
+## 🧩 Project Structure
+bash
+Copia
+Modifica
+/src
+├── assets/               # Images for each step
+├── App.tsx               # Main logic and state
+├── Card.tsx              # UI component for each onboarding step
+├── Card.css              # Styling for Card
+├── Indicator.tsx         # Step indicator using styled-components
+├── main.tsx              # Entry point
+└── index.css             # Global styles
+
+
+## 🛠 Technologies
+React
+
+TypeScript
+
+Framer Motion
+
+Styled Components
+
+CSS (Media Queries for responsiveness)
